@@ -1,0 +1,122 @@
+2021-02-09 09:28:20,468 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 55] Starting XxlJobAdminApplication on zhaoziqian-mac.local with PID 86738 (/Users/zhaoziqian/i/xxl-job-2.2.0/xxl-job-admin/target/classes started by zhaoziqian in /Users/zhaoziqian/i/xxl-job-2.2.0)
+2021-02-09 09:28:20,478 INFO [main] c.x.job.admin.XxlJobAdminApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2021-02-09 09:28:22,516 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2021-02-09 09:28:22,528 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-09 09:28:22,529 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2021-02-09 09:28:22,529 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-02-09 09:28:22,631 INFO [main] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2021-02-09 09:28:22,631 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1764 ms
+2021-02-09 09:28:23,425 INFO [main] c.x.j.a.c.scheduler.XxlJobScheduler [XxlJobScheduler.java : 45] >>>>>>>>> init xxl-job admin success.
+2021-02-09 09:28:23,444 INFO [xxl-job, admin JobFailMonitorHelper] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] HikariCP - Starting...
+2021-02-09 09:28:23,568 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-09 09:28:23,662 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 58] Adding welcome page template: index
+2021-02-09 09:28:23,794 INFO [xxl-job, admin JobFailMonitorHelper] com.zaxxer.hikari.pool.PoolBase [PoolBase.java : 531] HikariCP - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-02-09 09:28:23,880 INFO [xxl-job, admin JobFailMonitorHelper] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] HikariCP - Start completed.
+2021-02-09 09:28:24,082 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-09 09:28:24,137 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-09 09:28:24,176 INFO [main] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 09:28:24,176 INFO [main] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2021-02-09 09:28:24,185 INFO [main] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 9 ms
+2021-02-09 09:28:24,190 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path '/xxl-job-admin'
+2021-02-09 09:28:24,194 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 61] Started XxlJobAdminApplication in 4.204 seconds (JVM running for 5.04)
+2021-02-09 09:28:28,003 INFO [xxl-job, admin JobScheduleHelper#scheduleThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 51] >>>>>>>>> init xxl-job admin scheduler success.
+2021-02-09 09:35:29,439 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-09 09:35:30,443 INFO [xxl-job, admin JobScheduleHelper#scheduleThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 203] >>>>>>>>>>> xxl-job, JobScheduleHelper#scheduleThread stop
+2021-02-09 09:35:31,004 INFO [xxl-job, admin JobScheduleHelper#ringThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 264] >>>>>>>>>>> xxl-job, JobScheduleHelper#ringThread stop
+2021-02-09 09:35:31,448 INFO [SpringContextShutdownHook] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 351] >>>>>>>>>>> xxl-job, JobScheduleHelper stop
+2021-02-09 09:35:31,449 INFO [xxl-job, admin JobLogReportHelper] c.x.j.a.c.thread.JobLogReportHelper [JobLogReportHelper.java : 132] >>>>>>>>>>> xxl-job, job log report thread stop
+2021-02-09 09:35:31,449 INFO [SpringContextShutdownHook] c.x.j.a.c.t.JobTriggerPoolHelper [JobTriggerPoolHelper.java : 60] >>>>>>>>> xxl-job trigger thread pool shutdown success.
+2021-02-09 09:35:31,450 INFO [xxl-job, admin JobLosedMonitorHelper] c.x.j.a.c.t.JobLosedMonitorHelper [JobLosedMonitorHelper.java : 75] >>>>>>>>>>> xxl-job, JobLosedMonitorHelper stop
+2021-02-09 09:35:31,451 INFO [xxl-job, admin JobFailMonitorHelper] c.x.j.a.c.t.JobFailMonitorHelper [JobFailMonitorHelper.java : 90] >>>>>>>>>>> xxl-job, job fail monitor thread stop
+2021-02-09 09:35:31,452 INFO [xxl-job, admin JobRegistryMonitorHelper] c.x.j.a.c.t.JobRegistryMonitorHelper [JobRegistryMonitorHelper.java : 92] >>>>>>>>>>> xxl-job, job registry monitor thread stop
+2021-02-09 09:35:31,454 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] HikariCP - Shutdown initiated...
+2021-02-09 09:35:31,651 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] HikariCP - Shutdown completed.
+2021-02-09 09:35:36,560 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 55] Starting XxlJobAdminApplication on zhaoziqian-mac.local with PID 89874 (/Users/zhaoziqian/i/xxl-job-2.2.0/xxl-job-admin/target/classes started by zhaoziqian in /Users/zhaoziqian/i/xxl-job-2.2.0)
+2021-02-09 09:35:36,565 INFO [main] c.x.job.admin.XxlJobAdminApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2021-02-09 09:35:38,197 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2021-02-09 09:35:38,207 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-09 09:35:38,208 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2021-02-09 09:35:38,208 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-02-09 09:35:38,282 INFO [main] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2021-02-09 09:35:38,282 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1404 ms
+2021-02-09 09:35:38,983 INFO [main] c.x.j.a.c.scheduler.XxlJobScheduler [XxlJobScheduler.java : 45] >>>>>>>>> init xxl-job admin success.
+2021-02-09 09:35:38,995 INFO [xxl-job, admin JobFailMonitorHelper] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] HikariCP - Starting...
+2021-02-09 09:35:39,118 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-09 09:35:39,212 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 58] Adding welcome page template: index
+2021-02-09 09:35:39,288 INFO [xxl-job, admin JobFailMonitorHelper] com.zaxxer.hikari.pool.PoolBase [PoolBase.java : 531] HikariCP - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-02-09 09:35:39,337 INFO [xxl-job, admin JobFailMonitorHelper] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] HikariCP - Start completed.
+2021-02-09 09:35:39,545 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-09 09:35:39,593 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-09 09:35:39,626 INFO [main] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 09:35:39,626 INFO [main] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2021-02-09 09:35:39,634 INFO [main] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 8 ms
+2021-02-09 09:35:39,639 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path '/xxl-job-admin'
+2021-02-09 09:35:39,644 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 61] Started XxlJobAdminApplication in 3.644 seconds (JVM running for 4.422)
+2021-02-09 09:35:43,002 INFO [xxl-job, admin JobScheduleHelper#scheduleThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 51] >>>>>>>>> init xxl-job admin scheduler success.
+2021-02-09 09:37:36,666 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-09 09:37:37,669 INFO [xxl-job, admin JobScheduleHelper#scheduleThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 203] >>>>>>>>>>> xxl-job, JobScheduleHelper#scheduleThread stop
+2021-02-09 09:37:38,000 INFO [xxl-job, admin JobScheduleHelper#ringThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 264] >>>>>>>>>>> xxl-job, JobScheduleHelper#ringThread stop
+2021-02-09 09:37:38,670 INFO [SpringContextShutdownHook] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 351] >>>>>>>>>>> xxl-job, JobScheduleHelper stop
+2021-02-09 09:37:38,671 INFO [xxl-job, admin JobLogReportHelper] c.x.j.a.c.thread.JobLogReportHelper [JobLogReportHelper.java : 132] >>>>>>>>>>> xxl-job, job log report thread stop
+2021-02-09 09:37:38,671 INFO [SpringContextShutdownHook] c.x.j.a.c.t.JobTriggerPoolHelper [JobTriggerPoolHelper.java : 60] >>>>>>>>> xxl-job trigger thread pool shutdown success.
+2021-02-09 09:37:38,671 INFO [xxl-job, admin JobLosedMonitorHelper] c.x.j.a.c.t.JobLosedMonitorHelper [JobLosedMonitorHelper.java : 75] >>>>>>>>>>> xxl-job, JobLosedMonitorHelper stop
+2021-02-09 09:37:38,671 INFO [xxl-job, admin JobFailMonitorHelper] c.x.j.a.c.t.JobFailMonitorHelper [JobFailMonitorHelper.java : 90] >>>>>>>>>>> xxl-job, job fail monitor thread stop
+2021-02-09 09:37:38,671 INFO [xxl-job, admin JobRegistryMonitorHelper] c.x.j.a.c.t.JobRegistryMonitorHelper [JobRegistryMonitorHelper.java : 92] >>>>>>>>>>> xxl-job, job registry monitor thread stop
+2021-02-09 09:37:38,672 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] HikariCP - Shutdown initiated...
+2021-02-09 09:37:38,868 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] HikariCP - Shutdown completed.
+2021-02-09 09:37:43,102 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 55] Starting XxlJobAdminApplication on zhaoziqian-mac.local with PID 90643 (/Users/zhaoziqian/i/xxl-job-2.2.0/xxl-job-admin/target/classes started by zhaoziqian in /Users/zhaoziqian/i/xxl-job-2.2.0)
+2021-02-09 09:37:43,107 INFO [main] c.x.job.admin.XxlJobAdminApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2021-02-09 09:37:45,108 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2021-02-09 09:37:45,116 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-09 09:37:45,117 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2021-02-09 09:37:45,117 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-02-09 09:37:45,190 INFO [main] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2021-02-09 09:37:45,191 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1661 ms
+2021-02-09 09:37:45,883 INFO [main] c.x.j.a.c.scheduler.XxlJobScheduler [XxlJobScheduler.java : 45] >>>>>>>>> init xxl-job admin success.
+2021-02-09 09:37:45,896 INFO [xxl-job, admin JobLogReportHelper] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] HikariCP - Starting...
+2021-02-09 09:37:45,997 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-09 09:37:46,066 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 58] Adding welcome page template: index
+2021-02-09 09:37:46,189 INFO [xxl-job, admin JobLogReportHelper] com.zaxxer.hikari.pool.PoolBase [PoolBase.java : 531] HikariCP - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-02-09 09:37:46,242 INFO [xxl-job, admin JobLogReportHelper] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] HikariCP - Start completed.
+2021-02-09 09:37:46,384 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-09 09:37:46,431 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-09 09:37:46,461 INFO [main] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 09:37:46,461 INFO [main] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2021-02-09 09:37:46,467 INFO [main] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 6 ms
+2021-02-09 09:37:46,472 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path '/xxl-job-admin'
+2021-02-09 09:37:46,476 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 61] Started XxlJobAdminApplication in 3.894 seconds (JVM running for 4.66)
+2021-02-09 09:37:50,003 INFO [xxl-job, admin JobScheduleHelper#scheduleThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 51] >>>>>>>>> init xxl-job admin scheduler success.
+2021-02-09 09:38:23,714 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-09 09:38:24,718 INFO [xxl-job, admin JobScheduleHelper#scheduleThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 203] >>>>>>>>>>> xxl-job, JobScheduleHelper#scheduleThread stop
+2021-02-09 09:38:25,002 INFO [xxl-job, admin JobScheduleHelper#ringThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 264] >>>>>>>>>>> xxl-job, JobScheduleHelper#ringThread stop
+2021-02-09 09:38:25,723 INFO [SpringContextShutdownHook] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 351] >>>>>>>>>>> xxl-job, JobScheduleHelper stop
+2021-02-09 09:38:25,724 INFO [xxl-job, admin JobLogReportHelper] c.x.j.a.c.thread.JobLogReportHelper [JobLogReportHelper.java : 132] >>>>>>>>>>> xxl-job, job log report thread stop
+2021-02-09 09:38:25,724 INFO [SpringContextShutdownHook] c.x.j.a.c.t.JobTriggerPoolHelper [JobTriggerPoolHelper.java : 60] >>>>>>>>> xxl-job trigger thread pool shutdown success.
+2021-02-09 09:38:25,724 INFO [xxl-job, admin JobLosedMonitorHelper] c.x.j.a.c.t.JobLosedMonitorHelper [JobLosedMonitorHelper.java : 75] >>>>>>>>>>> xxl-job, JobLosedMonitorHelper stop
+2021-02-09 09:38:25,725 INFO [xxl-job, admin JobFailMonitorHelper] c.x.j.a.c.t.JobFailMonitorHelper [JobFailMonitorHelper.java : 90] >>>>>>>>>>> xxl-job, job fail monitor thread stop
+2021-02-09 09:38:25,725 INFO [xxl-job, admin JobRegistryMonitorHelper] c.x.j.a.c.t.JobRegistryMonitorHelper [JobRegistryMonitorHelper.java : 92] >>>>>>>>>>> xxl-job, job registry monitor thread stop
+2021-02-09 09:38:25,726 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 350] HikariCP - Shutdown initiated...
+2021-02-09 09:38:25,964 INFO [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 352] HikariCP - Shutdown completed.
+2021-02-09 09:38:30,677 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 55] Starting XxlJobAdminApplication on zhaoziqian-mac.local with PID 91041 (/Users/zhaoziqian/i/xxl-job-2.2.0/xxl-job-admin/target/classes started by zhaoziqian in /Users/zhaoziqian/i/xxl-job-2.2.0)
+2021-02-09 09:38:30,681 INFO [main] c.x.job.admin.XxlJobAdminApplication [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2021-02-09 09:38:32,241 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 92] Tomcat initialized with port(s): 8080 (http)
+2021-02-09 09:38:32,250 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-09 09:38:32,251 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2021-02-09 09:38:32,251 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-02-09 09:38:32,322 INFO [main] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2021-02-09 09:38:32,323 INFO [main] o.s.web.context.ContextLoader [ServletWebServerApplicationContext.java : 284] Root WebApplicationContext: initialization completed in 1351 ms
+2021-02-09 09:38:33,074 INFO [main] c.x.j.a.c.scheduler.XxlJobScheduler [XxlJobScheduler.java : 45] >>>>>>>>> init xxl-job admin success.
+2021-02-09 09:38:33,087 INFO [xxl-job, admin JobRegistryMonitorHelper] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 110] HikariCP - Starting...
+2021-02-09 09:38:33,218 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-09 09:38:33,302 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java : 58] Adding welcome page template: index
+2021-02-09 09:38:33,414 INFO [xxl-job, admin JobRegistryMonitorHelper] com.zaxxer.hikari.pool.PoolBase [PoolBase.java : 531] HikariCP - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-02-09 09:38:33,488 INFO [xxl-job, admin JobRegistryMonitorHelper] com.zaxxer.hikari.HikariDataSource [HikariDataSource.java : 123] HikariCP - Start completed.
+2021-02-09 09:38:33,663 INFO [main] o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java : 58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-09 09:38:33,712 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-09 09:38:33,791 INFO [main] o.a.c.c.C.[.[.[/xxl-job-admin] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-09 09:38:33,792 INFO [main] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2021-02-09 09:38:33,797 INFO [main] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 5 ms
+2021-02-09 09:38:33,803 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path '/xxl-job-admin'
+2021-02-09 09:38:33,807 INFO [main] c.x.job.admin.XxlJobAdminApplication [StartupInfoLogger.java : 61] Started XxlJobAdminApplication in 3.533 seconds (JVM running for 4.368)
+2021-02-09 09:38:38,004 INFO [xxl-job, admin JobScheduleHelper#scheduleThread] c.x.j.a.c.thread.JobScheduleHelper [JobScheduleHelper.java : 51] >>>>>>>>> init xxl-job admin scheduler success.
+2021-02-09 09:51:42,352 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'

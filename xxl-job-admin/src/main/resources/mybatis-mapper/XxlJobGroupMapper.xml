@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxl.job.admin.dao.XxlJobGroupDao">
+    <resultMap id="XxlJobGroup" type="com.xxl.job.admin.core.model.XxlJobGroup">
+        <result column="ID" property="id"/>
+        <result column="APP_NAME" property="appname"/>
+        <result column="TITLE" property="title"/>
+        <result column="ADDRESS_TYPE" property="addressType"/>
+        <result column="ADDRESS_LIST" property="addressList"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        T.ID,
+        T.APP_NAME,
+        T.TITLE,
+        T.ADDRESS_TYPE,
+        T.ADDRESS_LIST
+    </sql>
+
+    <select id="findAll" resultMap="XxlJobGroup">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM XXL_JOB_GROUP T
+        ORDER BY T.APP_NAME, T.TITLE, T.ID ASC
+    </select>
+
+    <select id="findByAddressType" parameterType="java.lang.Integer" resultMap="XxlJobGroup">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM XXL_JOB_GROUP T
+        WHERE T.ADDRESS_TYPE = #{addressType}
+        ORDER BY T.APP_NAME, T.TITLE, T.ID ASC
+    </select>
+
+    <insert id="save" parameterType="com.xxl.job.admin.core.model.XxlJobGroup" useGeneratedKeys="true" keyProperty="id">
+        <selectKey resultType="java.lang.Integer" order="BEFORE" keyProperty="id">
+            SELECT SEQ_XXL_JOB_GROUP.Nextval as ID
+            from DUAL
+        </selectKey>
+        INSERT INTO XXL_JOB_GROUP (ID,
+                                   APP_NAME,
+                                   TITLE,
+                                   ADDRESS_TYPE,
+                                   ADDRESS_LIST)
+        VALUES (#{id,jdbcType=DECIMAL},
+                #{appname,jdbcType=VARCHAR},
+                #{title,jdbcType=VARCHAR},
+                #{addressType,jdbcType=DECIMAL},
+                #{addressList,jdbcType=VARCHAR})
+    </insert>
+
+    <update id="update" parameterType="com.xxl.job.admin.core.model.XxlJobGroup">
+        UPDATE XXL_JOB_GROUP
+        SET APP_NAME     = #{appname,jdbcType=VARCHAR},
+            TITLE        = #{title,jdbcType=VARCHAR},
+            ADDRESS_TYPE = #{addressType,jdbcType=DECIMAL},
+            ADDRESS_LIST = #{addressList,jdbcType=VARCHAR}
+        WHERE ID = #{id}
+    </update>
+
+    <delete id="remove" parameterType="java.lang.Integer">
+        DELETE
+        FROM XXL_JOB_GROUP
+        WHERE ID = #{id}
+    </delete>
+
+    <select id="load" parameterType="java.lang.Integer" resultMap="XxlJobGroup">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM XXL_JOB_GROUP T
+        WHERE T.ID = #{id}
+    </select>
+
+    <select id="pageList" parameterType="java.util.HashMap" resultMap="XxlJobGroup">
+        SELECT * FROM (
+                SELECT * FROM (
+                SELECT <include refid="Base_Column_List"/>,
+            ROWNUM RU
+            FROM XXL_JOB_GROUP T
+        <trim prefix="WHERE" prefixOverrides="AND | OR">
+            <if test="appname != null and appname != ''">
+                AND T.APP_NAME LIKE '%' || #{appname} || '%'
+            </if>
+            <if test="title != null and title != ''">
+                AND T.TITLE LIKE '%' || #{title} || '%'
+            </if>
+        </trim>
+        ORDER BY T.APP_NAME, T.TITLE, T.ID ASC ) TT
+                WHERE TT.RU &lt; #{offset} + #{pagesize} + 1
+                ) TTT
+                WHERE TTT.RU &gt;= #{offset} + 1
+    </select>
+
+    <select id="pageListCount" parameterType="java.util.HashMap" resultType="int">
+        SELECT COUNT(1)
+        FROM XXL_JOB_GROUP T
+        <trim prefix="WHERE" prefixOverrides="AND | OR">
+            <if test="appname != null and appname != ''">
+                AND T.APP_NAME LIKE '%' || #{appname} || '%'
+            </if>
+            <if test="title != null and title != ''">
+                AND t.title like '%' || #{title} || '%'
+            </if>
+        </trim>
+    </select>
+</mapper>
